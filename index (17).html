@@ -25,9 +25,6 @@
       top: 0;
       z-index: 999;
     }
-    header img {
-      height: 60px;
-    }
     nav a {
       margin: 0 15px;
       text-decoration: none;
@@ -69,6 +66,31 @@
       padding: 30px;
       text-align: center;
     }
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: right;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    button[type="submit"] {
+      padding: 10px 20px;
+      background: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button[type="submit"]:hover {
+      background-color: #005f9e;
+    }
     [data-aos] {
       opacity: 0;
       transform: translateY(30px);
@@ -79,7 +101,7 @@
 <body>
   <div id="app">
     <header>
-      <!-- ✅ الصورة من رابط خارجي -->
+      <!-- لا توجد صورة -->
       <nav>
         <a href="#home">الرئيسية</a>
         <a href="#services">خدماتنا</a>
@@ -112,7 +134,19 @@
 
     <section id="contact" data-aos="fade-up">
       <h2>تواصل معنا</h2>
-      <p>راسلنا عبر البريد: <a href="mailto:arabwork828@gmail.com">arabwork828@gmail.com</a></p>
+      <p>يمكنك مراسلتنا مباشرة أو ملء النموذج التالي:</p>
+      <form action="mailto:arabwork828@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">الاسم:</label>
+        <input type="text" name="name" id="name" required placeholder="اكتب اسمك" />
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" name="email" id="email" required placeholder="example@email.com" />
+
+        <label for="service">الخدمة المطلوبة:</label>
+        <textarea name="service" id="service" rows="4" placeholder="ما نوع الخدمة التي تحتاجها؟"></textarea>
+
+        <button type="submit">أرسل الطلب</button>
+      </form>
     </section>
 
     <footer>
@@ -127,4 +161,4 @@
     createApp({ data() { return {}; } }).mount("#app");
   </script>
 </body>
-</html>
+          </html>
