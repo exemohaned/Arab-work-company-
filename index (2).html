@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arab Work</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header, footer {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      margin: 10px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #1e1e2f;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #343456;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arab Work</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="#register">التسجيل</a>
+    </nav>
+  </header>  <section id="home" class="section">
+    <div class="card">
+      <h2>مرحبًا بك في Arab Work</h2>
+      <p>منصة الفريلانسر الأقوى لمساعدتك في إنجاز مشاريعك بخبرة واحتراف.</p>
+    </div>
+  </section>  <section id="about" class="section">
+    <div class="card">
+      <h2>من نحن</h2>
+      <p>نحن فريق من المستقلين المحترفين نعمل في مجالات متعددة لنساعدك في تحقيق أفكارك وتحويلها إلى واقع.</p>
+    </div>
+  </section>  <section id="services" class="section">
+    <div class="card">
+      <h2>خدماتنا</h2>
+      <ul style="text-align:right">
+        <li>تصميم وتطوير مواقع</li>
+        <li>تصميم وتطوير تطبيقات</li>
+        <li>تسويق إلكتروني</li>
+        <li>كتابة مقالات جذابة</li>
+        <li>صناعة أفلام باستخدام الذكاء الاصطناعي</li>
+        <li>ترجمة أفلام وألعاب</li>
+        <li>تصميم شعارات وCV مميز</li>
+      </ul>
+    </div>
+  </section>  <section id="contact" class="section">
+    <div class="card">
+      <h2>تواصل معنا</h2>
+      <p>للاستفسار: arabwork828@gmail.com</p>
+    </div>
+  </section>  <section id="register" class="section">
+    <div class="card">
+      <h2>سجل معنا لطلب خدمتك</h2>
+     <form action="send.php" method="POST">
+  <input type="text" name="name" placeholder="اسمك الكامل" required>
+  <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+  <input type="text" name="phone" placeholder="رقم الهاتف" required>
+  <input type="text" name="service" placeholder="نوع الخدمة المطلوبة">
+  <input type="text" name="budget" placeholder="الميزانية (اختياري)">
+  <textarea name="notes" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+  <button type="submit">إرسال</button>
+</form>
+      </form>
+    </div>
+  </section>  <footer>
+    <p>جميع الحقوق محفوظة © Arab Work 2025</p>
+  </footer>
+</body>
+</html>
